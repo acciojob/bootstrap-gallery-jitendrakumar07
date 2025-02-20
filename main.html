@@ -109,20 +109,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script>
-    // jQuery to update the lightbox modal with the clicked image
-    $(document).ready(function(){
-      $('.gallery-image').on('click', function(){
-        var imgSrc = $(this).attr('src');
-        $('#lightboxImage').attr('src', imgSrc);
-      });
-    });
-	  () => { 
-    const tags = ['img', 'h6', 'p']; 
-    tags.forEach(tag => { 
-        cy.get(tag).should('have.length', 6); 
-    }); 
-}
-  </script>
+ 
+	<script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
