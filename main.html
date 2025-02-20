@@ -1,16 +1,156 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compact Cards Gallery</title>
+  <!-- Bootstrap 4.3.1 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    /* Ensure cards have a border radius */
+    .card {
+      border-radius: 0.5rem;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <div class="container my-4">
+    <!-- Header -->
+    <h2 class="mb-4">Cards Gallery</h2>
+    <!-- Single container with one row holding the cards -->
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <a href="#" data-toggle="modal" data-target="#lightboxModal">
+            <img src="https://storage.googleapis.com/acciojob-open-file-collections/image1.jpg" class="card-img-top gallery-image" alt="Image1">
+          </a>
+          <div class="card-body">
+            <h6 class="card-title text-center">Image1 Title</h6>
+            <p class="card-text text-center">Description for Image1.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <a href="#" data-toggle="modal" data-target="#lightboxModal">
+            <img src="https://storage.googleapis.com/acciojob-open-file-collections/image2.jpg" class="card-img-top gallery-image" alt="Image2">
+          </a>
+          <div class="card-body">
+            <h6 class="card-title text-center">Image2 Title</h6>
+            <p class="card-text text-center">Description for Image2.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <a href="#" data-toggle="modal" data-target="#lightboxModal">
+            <img src="image3.jpg" class="card-img-top gallery-image" alt="Image3">
+          </a>
+          <div class="card-body">
+            <h6 class="card-title text-center">Image3 Title</h6>
+            <p class="card-text text-center">Description for Image3.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <a href="#" data-toggle="modal" data-target="#lightboxModal">
+            <img src="image4.jpg" class="card-img-top gallery-image" alt="Image4">
+          </a>
+          <div class="card-body">
+            <h6 class="card-title text-center">Image4 Title</h6>
+            <p class="card-text text-center">Description for Image4.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <a href="#" data-toggle="modal" data-target="#lightboxModal">
+            <img src="image5.jpg" class="card-img-top gallery-image" alt="Image5">
+          </a>
+          <div class="card-body">
+            <h6 class="card-title text-center">Image5 Title</h6>
+            <p class="card-text text-center">Description for Image5.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <a href="#" data-toggle="modal" data-target="#lightboxModal">
+            <img src="image6.jpg" class="card-img-top gallery-image" alt="Image6">
+          </a>
+          <div class="card-body">
+            <h6 class="card-title text-center">Image6 Title</h6>
+            <p class="card-text text-center">Description for Image6.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Optional: Additional Cards using the remaining images -->
+      <div class="col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <a href="#" data-toggle="modal" data-target="#lightboxModal">
+            <img src="image7.jpg" class="card-img-top gallery-image" alt="Image7">
+          </a>
+          <div class="card-body">
+            <h6 class="card-title text-center">Image7 Title</h6>
+            <p class="card-text text-center">Description for Image7.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <a href="#" data-toggle="modal" data-target="#lightboxModal">
+            <img src="image8.jpg" class="card-img-top gallery-image" alt="Image8">
+          </a>
+          <div class="card-body">
+            <h6 class="card-title text-center">Image8 Title</h6>
+            <p class="card-text text-center">Description for Image8.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 mb-4">
+        <div class="card">
+          <a href="#" data-toggle="modal" data-target="#lightboxModal">
+            <img src="image9.jpg" class="card-img-top gallery-image" alt="Image9">
+          </a>
+          <div class="card-body">
+            <h6 class="card-title text-center">Image9 Title</h6>
+            <p class="card-text text-center">Description for Image9.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- Lightbox Modal -->
+  <div class="modal fade" id="lightboxModal" tabindex="-1" role="dialog" aria-labelledby="lightboxModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body p-0">
+          <img src="" class="img-fluid" id="lightboxImage" alt="Enlarged Image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 4.3.1 JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script>
+    // jQuery to update the lightbox modal with the clicked image
+    $(document).ready(function(){
+      $('.gallery-image').on('click', function(){
+        var imgSrc = $(this).attr('src');
+        $('#lightboxImage').attr('src', imgSrc);
+      });
+    });
+  </script>
 </body>
-
 </html>
